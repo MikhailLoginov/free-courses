@@ -2,9 +2,9 @@
 
 "use strict";
 
-var d = parseFloat(process.argv[2]),
+var d = parseInt(process.argv[2]),
     m = process.argv[3],
-    y = parseFloat(process.argv[4]),
+    y = parseInt(process.argv[4]),
     counter = 0;
 
 if (d >= 1 && d <= 31 && y >= 1 && y <= 2999) {
@@ -52,5 +52,5 @@ if (d >= 1 && d <= 31 && y >= 1 && y <= 2999) {
             counter = 31 - d;
             break;
     }
-    process.stdout.write(String(counter));
+    process.stdout.write(`${counter}`);
 }

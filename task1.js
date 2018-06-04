@@ -1,6 +1,6 @@
 /* Task 1 */
 
-'use strict';
+"use strict";
 
 var i = process.argv[2],
     a = parseFloat(process.argv[3]),
