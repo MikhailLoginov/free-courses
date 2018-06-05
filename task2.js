@@ -7,7 +7,7 @@ var d = parseInt(process.argv[2]),
     y = parseInt(process.argv[4]),
     counter = 0;
 
-if (d >= 1 && d <= 31 && y >= 1 && y <= 2999) {
+// if (d >= 1 && d <= 31 && y >= 1 && y <= 2999) {
     switch (m) {
         case "января":
             counter = 365 - d;
@@ -53,4 +53,4 @@ if (d >= 1 && d <= 31 && y >= 1 && y <= 2999) {
             break;
     }
     process.stdout.write(`${counter}`);
-}
+// }
