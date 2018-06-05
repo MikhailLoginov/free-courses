@@ -21,7 +21,7 @@ var d = parseInt(process.argv[2]),
             if (y % 4 == 0) {
                 counter++;
             };
-            if (d > 29 || (d = 29 && y % 4 != 0)) {
+            if (d > 29 || (d == 29 && y % 4 != 0)) {
                 err = true;
             }
             break;
@@ -30,7 +30,7 @@ var d = parseInt(process.argv[2]),
             break;
         case "апреля":
             counter = 365 - 31 - 28 - 31 - d;
-            if (d=31) {
+            if (d == 31) {
                 err = true;
             }
             break;
@@ -39,7 +39,7 @@ var d = parseInt(process.argv[2]),
             break;
         case "июня":
             counter = 365 - 31 - 28 - 31 - 30 - 31 - d;
-            if (d=31) {
+            if (d == 31) {
                 err = true;
             }
             break;
@@ -51,7 +51,7 @@ var d = parseInt(process.argv[2]),
             break;
         case "сентября":
             counter = 30 + 31 + 30 + 31 - d;
-            if (d=31) {
+            if (d == 31) {
                 err = true;
             }
             break;
@@ -60,7 +60,7 @@ var d = parseInt(process.argv[2]),
             break;
         case "ноября":
             counter = 30 + 31 - d;
-            if (d=31) {
+            if (d == 31) {
                 err = true;
             }
             break;
