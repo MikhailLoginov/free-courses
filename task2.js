@@ -66,12 +66,6 @@ var d = parseInt(process.argv[2]),
             break;
         case "декабря":
             counter = 31 - d;
-            if (d == 31) {
-                counter = 365;
-                if ((y+1) % 4 == 0) {
-                    counter++;
-                }
-            }
             break;
     }
     if (!err) {
