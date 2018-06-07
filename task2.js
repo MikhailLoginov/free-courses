@@ -67,6 +67,9 @@ var d = parseInt(process.argv[2]),
         case "декабря":
             counter = 31 - d;
             break;
+        default:
+            err = true;
+            break;
     }
     if (!err) {
         process.stdout.write(`${counter}`);
