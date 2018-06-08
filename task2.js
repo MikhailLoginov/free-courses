@@ -11,13 +11,13 @@ var d = +process.argv[2],
 switch (m) {
     case "января":
         counter = 365 - d;
-        if (y % 4 == 0) {
+        if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0)) {
             counter++;
         };
         break;
     case "февраля":
         counter = 365 - 31 - d;
-        if (y % 4 == 0) {
+        if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0)) {
             counter++;
         };
         if (d > 29 || (d == 29 && y % 4 != 0)) {
