@@ -2,9 +2,9 @@
 
 "use strict";
 
-var d = parseInt(process.argv[2]),
+var d = +process.argv[2],
     m = process.argv[3],
-    y = parseInt(process.argv[4]),
+    y = +process.argv[4],
     counter = 0,
     err = false;
 
@@ -71,5 +71,6 @@ switch (m) {
         break;
 }
 if (!err) {
-    process.stdout.write(`${counter}`);
+    //process.stdout.write('${ counter }');
+    console.log(counter);
 }
